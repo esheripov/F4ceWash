@@ -1,0 +1,88 @@
+.tooltip
+{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  outline: none;
+  padding: 0 1px;
+}
+
+.tooltip span
+{
+  visibility: hidden;
+  position: absolute; 
+  bottom: 42px;
+  z-index: 999;
+  width: 90px;
+  height: 14px;
+  margin-left: -30px;
+  padding: 0px 4px 4px;
+  border: 1px solid #ccc;
+  opacity: 1;
+  background-color: #FFF;                     
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));  
+  -moz-border-radius: 4px;
+  border-radius: 4px;  
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;  
+  text-shadow: 0 1px 0 rgba(255,255,255,.4); 
+  text-align:center;
+  font-size:12px;
+  color:#000;
+}
+
+.tooltip:hover
+{
+  border: 0; /* IE6 fix */
+}
+
+.tooltip:hover span
+{
+  visibility: visible;
+}
+
+.tooltip #defaultSpan:before,
+.tooltip #defaultSpan:after
+{
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -8px;  
+  border-top: 8px solid #ddd;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;        
+  border-bottom: 0px;  
+}
+
+.tooltip #comingSoonSpan:before,
+.tooltip #comingSoonSpan:after
+{
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  top:-8px;
+  margin-left: -8px;  
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;        
+  border-bottom: 8px solid #ddd;
+}
+
+.tooltip #comingSoonSpan:before
+{
+  border-top-color: #ccc;
+}
+
+.tooltip #defaultSpan:before
+{
+  border-top-color: #ccc;
+  bottom: -8px;
+}

@@ -1,0 +1,173 @@
+/* -------------------------------------------------------------------------------------------------
+=Navigation
+--------------------------------------------------------------------------------------------------*/
+
+#nav {
+	float: left;
+/*	height: 50px;*/
+	margin: 0 auto;
+	padding: 0;
+}
+
+#nav li {
+	position: relative;
+	float: left;
+}
+
+#nav li a {
+	display: block;
+	height: 60px;
+	text-indent: -9999px;
+}
+
+#nav_home a {width: 72px; background: transparent url(/images/nav_black.png) no-repeat 0 0;}
+#nav_home a:hover {background: transparent url(/images/nav_black.png) no-repeat 0 -60px;}
+
+#nav_services a {width: 93px; background: transparent url(/images/nav_black.png) no-repeat -72px 0;}
+#nav_services:hover a {background: transparent url(/images/nav_black.png) no-repeat -72px -60px;}
+
+#nav_pricing a {width: 84px; background: transparent url(/images/nav_black.png) no-repeat -165px 0;}
+#nav_pricing:hover a {background: transparent url(/images/nav_black.png) no-repeat -165px -60px;}
+
+#nav_portfolio a {width: 106px; background: transparent url(/images/nav_black.png) no-repeat -249px 0;}
+#nav_portfolio a:hover {background: transparent url(/images/nav_black.png) no-repeat -249px -60px;}
+
+#nav_about a {width: 70px; background: transparent url(/images/nav_black.png) no-repeat -355px 0;}
+#nav_about a:hover {background: transparent url(/images/nav_black.png) no-repeat -355px -60px;}
+
+#nav_blog a {width: 68px; background: transparent url(/images/nav_black.png) no-repeat -425px 0;}
+#nav_blog a:hover {background: transparent url(/images/nav_black.png) no-repeat -425px -60px;}
+
+#nav li#nav_order a {width: 125px; background: transparent url(/images/nav_black.png) no-repeat -493px 0;}
+#nav li#nav_order a:hover {background: transparent url(/images/nav_black.png) no-repeat -493px -60px;}
+
+#nav li#nav_quote a {width: 120px; background: transparent url(/images/nav_black.png) no-repeat -350px 0;}
+#nav li#nav_quote a:hover {background: transparent url(/images/nav_black.png) no-repeat -350px -60px;}
+
+#nav li#nav_chat a {width: 83px; text-indent: 0;}
+#nav li#nav_chat a img {margin: 12px 0 0 10px;}
+
+#nav li#nav_contact a {width: 99px; background: transparent url(/images/nav_black.png) no-repeat -626px 0;}
+#nav li#nav_contact a:hover {background: transparent url(/images/nav_black.png) no-repeat -626px -60px;}
+
+/* =Nav (Dropdowns)
+---------------------------------------*/
+
+#nav .dropdown {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: -10px;
+	width: 165px;
+	padding: 0;
+	z-index: 10000;
+	-moz-box-shadow: 0 0px 10px rgba(0,0,0,.5);
+}
+
+#nav .dropdown ul {
+	padding: 0;
+}
+
+#nav #nav_pricing .dropdown {
+	width: 155px;
+}
+
+#nav #nav_about .dropdown {
+	width: 145px;
+}
+
+#nav .dropdown li a {
+	width: inherit;
+	height: inherit;
+	color: #022036;
+	margin: 0;
+	padding: 8px 20px;
+	text-indent: 0;
+	text-align: left;
+	background-image: none;
+	background-color: #379BE1;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+#nav .first_children li {
+	position: relative;
+	float: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #3190d2;
+}
+
+#nav .first_children li:hover a {
+	background-color: #5dbafb;
+}
+
+#nav .first_children li a:hover {
+	text-decoration: none;
+	color: #1d1d1d;
+}
+
+#nav .dropdown .second_children {
+	position: absolute;
+	top: 0;
+	left: 165px;
+}
+
+#nav .dropdown #offset_second_children.second_children {
+	width: 130px;
+}
+
+#nav .dropdown .second_children li a {
+	background-color: #5dbafb;
+}
+
+#nav .dropdown .second_children li a:hover {
+	background-color: #98d5ff;
+}
+
+#nav .dropdown .second_children {display: none;}
+#nav .has_children:hover .dropdown,
+#nav .first_children .has_children:hover .second_children {display: block;}
+
+#new_product ul li {
+	float: left;
+	width: 100px;
+	margin-right: 10px;
+	padding: 10px;
+	background-color: #e5e5e5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+label.instruction {
+	float: none;
+	display: block;
+	width: 415px;
+	margin-left: 145px;
+  padding: 5px 0 10px 0;  
+  font-style: italic;
+  color: #888;
+}
+
+input[type="checkbox"] {
+	margin: 0 5px 10px 145px;
+	vertical-align: top;
+}
+
+body#new.user_sessions label {
+	float: none;
+	display: inline;
+	padding: 0;
+	width: inherit;
+}
+
+body#new.user_sessions input[type="checkbox"] {
+	margin-left: 0;
+}
+
+label {
+	float: left;
+	display: block;
+	width: 130px;
+	padding: 0px 15px 0 0;
+	font-size: 11px;
+}
